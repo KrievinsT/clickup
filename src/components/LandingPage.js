@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const pageSections = [
   {
@@ -20,8 +21,7 @@ const pageSections = [
 
 export default function LandingPage() {
   return (
-    <div className="min-h-screen bg-white">
-      {/* Header Section */}
+    <div className="min-h-screen bg-gray-100">
       <header className="border-b">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center space-x-2">
@@ -33,7 +33,7 @@ export default function LandingPage() {
             <span className="text-xl font-semibold">Clikup</span>
           </div>
           <nav className="hidden md:flex items-center space-x-6">
-            <a href="#" className="text-gray-600 hover:text-orange-500">Features</a>
+          <Link to="Features" className="text-gray-600 hover:text-orange-500">Features</Link>
             <a href="#" className="text-gray-600 hover:text-orange-500">Pricing</a>
             <a href="#" className="text-gray-600 hover:text-orange-500">About Us</a>
             <a href="#" className="text-gray-600 hover:text-orange-500">Blog</a>
@@ -45,7 +45,6 @@ export default function LandingPage() {
         </div>
       </header>
 
-      {/* Main Section */}
       <main className="container mx-auto px-4 py-12 md:py-24 flex flex-col md:flex-row items-center justify-between">
         <div className="md:w-1/2 mb-12 md:mb-0">
           <div className="inline-block mb-4">
@@ -69,7 +68,6 @@ export default function LandingPage() {
               alt="Client Image"
               className="lazyload w-full max-w-[1200px] sm:max-w-[800px] md:max-w-[500px]"
             />
-            {/* Floating images */}
             <img
               src="https://cdn.prod.website-files.com/6706a99d653627fc4a24f79b/67079ce81c28f88fc76b29d9_Frame%201000002280.webp"
               alt="Floating USA Image"
@@ -89,7 +87,6 @@ export default function LandingPage() {
         </div>
       </main>
 
-      {/* Features Section */}
       <section className="w-full py-12 md:py-24">
         <div className="container px-4 md:px-6 mx-auto">
           <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-3">
@@ -136,7 +133,6 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Bottom Section with AI content */}
       <section className="py-12 md:py-24 bg-gray-50">
         <div className="container mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center justify-between">
           <div className="md:w-1/2 flex justify-center md:justify-start items-center relative mb-12 md:mb-0">
@@ -194,7 +190,6 @@ export default function LandingPage() {
       </h1>
     </div>
 
-    {/* Image container with overlay */}
     <div className="relative mt-8 w-full max-w-[800px] mx-auto">
       <img
         src="https://cdn.prod.website-files.com/6706a99d653627fc4a24f79b/6708e814abb51277c595b3ca_Group%2046895.webp"
@@ -221,7 +216,6 @@ export default function LandingPage() {
       </h1>
     </div>
 
-    {/* Image container with overlay */}
     <div className="relative mt-8 w-full max-w-[800px] mx-auto">
    <img
       src="https://cdn.prod.website-files.com/6706a99d653627fc4a24f79b/6708e814abb51277c595b3ca_Group%2046895.webp"
@@ -252,19 +246,12 @@ export default function LandingPage() {
       alt="Overlay Image"
       className="w-full rounded-lg resized-image"
     />
-    {/* <img
-      src="https://cdn.prod.website-files.com/6706a99d653627fc4a24f79b/6708e814abb51277c595b3ca_Group%2046895.webp"
-      alt="Foreground Image"
-      className="absolute top-[100px] left-1/2 transform -translate-x-1/2 w-[80%] sm:w-[75%] rounded-lg"
-    /> */}
-
 
   </div>
 </section>
 
 <section className="container mx-auto px-4 py-12">
       <div className="grid md:grid-cols-2 gap-12 items-start">
-        {/* Left Column */}
         <div className="space-y-8">
           <div className="inline-flex items-center gap-2">
             <span className="bg-[#FF7A59] text-white text-sm font-medium px-3 py-1 rounded">Clikup</span>
@@ -499,8 +486,288 @@ export default function LandingPage() {
 </section>
 
 <section>
-    
+<div className="flex justify-center items-center p-4">
+    <span className="bg-[#FF7A59] text-white text-sm font-medium px-3 py-1 rounded-full mr-2">Clickup</span>
+    <span className="text-gray-600">Pricing for you</span>
+  </div>
+  <div className="container mx-auto px-4 md:px-6 flex flex-col items-center justify-center">
+    <h1 className="mt-4 text-4xl sm:text-5xl font-bold leading-tight">
+      Boost your <span className="text-[#FF7A59]">teamwork</span>
+    </h1>
+    <p className="text-sm text-gray-600 leading-relaxed">
+    Combine all your essential processes and data in Tuesday CRM for the smoothest workflows.
+    </p>
+    <div class="container mx-auto px-4">
+</div>
+<div className="grid lg:grid-cols-3 gap-6 max-w-6xl mx-auto p-4">
+      <div className="bg-white rounded-3xl p-6 shadow-lg">
+        <div className="space-y-1">
+          <h3 className="text-2xl font-bold">Starter Plan</h3>
+          <p className="text-gray-500">Perfect for Small Teams and Startups</p>
+        </div>
+        <div className="mt-8 mb-8">
+          <div className="inline-flex items-baseline">
+            <span className="text-5xl font-bold">$50.00</span>
+            <span className="text-gray-500 ml-2">/ month</span>
+          </div>
+        </div>
+        <button className="w-full rounded-full h-12 border-2 border-gray-200 font-semibold hover:bg-orange-500 transition-colors cursor-pointer">
+          Get Started
+        </button>
+        <ul className="mt-8 space-y-4">
+          <li className="flex items-center">
+            <div className="w-5 h-5 rounded-full border-2 border-black mr-3"></div>
+            <span className="text-gray-500">Unlimited docs</span>
+          </li>
+          <li className="flex items-center">
+            <div className="w-5 h-5 rounded-full border-2 border-black mr-3"></div>
+            <span className="text-gray-500">200+ templates</span>
+          </li>
+          <li className="flex items-center">
+            <div className="w-5 h-5 rounded-full border-2 border-black mr-3"></div>
+            <span className="text-gray-500">5GB file storage</span>
+          </li>
+          <li className="flex items-center">
+            <div className="w-5 h-5 rounded-full border-2 border-black mr-3"></div>
+            <span className="text-gray-500">Automations (250 actions per month)</span>
+          </li>
+        </ul>
+      </div>
+
+      <div className="bg-white rounded-3xl p-6 shadow-lg">
+        <div className="space-y-1">
+          <h3 className="text-2xl font-bold">Professional Plan</h3>
+          <p className="text-gray-500">For Growing Businesses Ready to Scale</p>
+        </div>
+        <div className="mt-8 mb-8">
+          <div className="inline-flex items-baseline">
+            <span className="text-5xl font-bold">$80.00</span>
+            <span className="text-gray-500 ml-2">/ month</span>
+          </div>
+        </div>
+        <button className="w-full rounded-full h-12 bg-black text-white font-semibold hover:bg-black/90 transition-colors cursor-pointer">
+          Get Started
+        </button>
+        <ul className="mt-8 space-y-4">
+          <li className="flex items-center">
+            <div className="w-5 h-5 rounded-full border-2 border-black mr-3"></div>
+            <span className="text-gray-500">Unlimited docs</span>
+          </li>
+          <li className="flex items-center">
+            <div className="w-5 h-5 rounded-full border-2 border-black mr-3"></div>
+            <span className="text-gray-500">200+ templates</span>
+          </li>
+          <li className="flex items-center">
+            <div className="w-5 h-5 rounded-full border-2 border-black mr-3"></div>
+            <span className="text-gray-500">5GB file storage</span>
+          </li>
+          <li className="flex items-center">
+            <div className="w-5 h-5 rounded-full border-2 border-black mr-3"></div>
+            <span className="text-gray-500">Automations (250 actions per month)</span>
+          </li>
+        </ul>
+      </div>
+
+      <div className="bg-white rounded-3xl p-6 shadow-lg">
+        <div className="space-y-1">
+          <h3 className="text-2xl font-bold">Enterprise Plan</h3>
+          <p className="text-gray-500">Perfect for Large Organizations</p>
+        </div>
+        <div className="mt-8 mb-8">
+          <div className="inline-flex items-baseline">
+            <span className="text-5xl font-bold">$150.00</span>
+            <span className="text-gray-500 ml-2">/ month</span>
+          </div>
+        </div>
+        <button className="w-full rounded-full h-12 border-2 border-gray-200 font-semibold hover:bg-orange-500 transition-colors cursor-pointer">
+          Get Started
+        </button>
+        <ul className="mt-8 space-y-4">
+          <li className="flex items-center">
+            <div className="w-5 h-5 rounded-full border-2 border-black mr-3"></div>
+            <span className="text-gray-500">Unlimited docs</span>
+          </li>
+          <li className="flex items-center">
+            <div className="w-5 h-5 rounded-full border-2 border-black mr-3"></div>
+            <span className="text-gray-500">200+ templates</span>
+          </li>
+          <li className="flex items-center">
+            <div className="w-5 h-5 rounded-full border-2 border-black mr-3"></div>
+            <span className="text-gray-500">5GB file storage</span>
+          </li>
+          <li className="flex items-center">
+            <div className="w-5 h-5 rounded-full border-2 border-black mr-3"></div>
+            <span className="text-gray-500">Automations (250 actions per month)</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+</div>
 </section>
+
+<section>
+<div className="flex justify-center items-center p-4">
+    <span className="bg-[#FF7A59] text-white text-sm font-medium px-3 py-1 rounded-full mr-2">Clickup</span>
+    <span className="text-gray-600">FAQ</span>
+  </div>
+  <div className="container mx-auto px-4 md:px-6 flex flex-col items-center justify-center">
+    <h1 className="mt-4 text-4xl sm:text-5xl font-bold leading-tight">
+    Frequently answer <span className="text-[#FF7A59]">questions</span>
+    </h1>
+    <p className="text-sm text-gray-600 leading-relaxed">
+    Manage it all with a fully customizable, no code platform
+    </p>
+    <div class="container mx-auto px-4">
+</div>
+</div>
+<div className="max-w-3xl mx-auto space-y-4 p-4">
+      <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-200">
+        <div className="w-full px-6 py-4 flex items-center justify-between">
+          <div className="text-xl font-normal text-[#1a1a1a]">
+            What is Customer Relationship Management (CRM)?
+          </div>
+          <div className="w-8 h-8 flex items-center justify-center rounded-full bg-[#333333] text-white">
+            <div className="text-2xl font-light leading-none mb-1">+</div>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-200">
+        <div className="w-full px-6 py-4 flex items-center justify-between">
+          <div className="text-xl font-normal text-[#1a1a1a]">
+            What is CRM Software Used For?
+          </div>
+          <div className="w-8 h-8 flex items-center justify-center rounded-full bg-[#333333] text-white">
+            <div className="text-2xl font-light leading-none mb-1">+</div>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-200">
+        <div className="w-full px-6 py-4 flex items-center justify-between">
+          <div className="text-xl font-normal text-[#1a1a1a]">
+            How Can CRM Help Improve Customer Retention?
+          </div>
+          <div className="w-8 h-8 flex items-center justify-center rounded-full bg-[#333333] text-white">
+            <div className="text-2xl font-light leading-none mb-1">+</div>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-200">
+        <div className="w-full px-6 py-4 flex items-center justify-between">
+          <div className="text-xl font-normal text-[#1a1a1a]">
+            What Are the Key Features of CRM Software?
+          </div>
+          <div className="w-8 h-8 flex items-center justify-center rounded-full bg-[#333333] text-white">
+            <div className="text-2xl font-light leading-none mb-1">+</div>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-200">
+        <div className="w-full px-6 py-4 flex items-center justify-between">
+          <div className="text-xl font-normal text-[#1a1a1a]">
+            Is CRM Software Useful for Small Businesses?
+          </div>
+          <div className="w-8 h-8 flex items-center justify-center rounded-full bg-[#333333] text-white">
+            <div className="text-2xl font-light leading-none mb-1">+</div>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-200">
+        <div className="w-full px-6 py-4 flex items-center justify-between">
+          <div className="text-xl font-normal text-[#1a1a1a]">
+            How Does CRM Software Support Sales Growth?
+          </div>
+          <div className="w-8 h-8 flex items-center justify-center rounded-full bg-[#333333] text-white">
+            <div className="text-2xl font-light leading-none mb-1">+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<footer>
+  <div className="w-full px-6 py-12 bg-white rounded-lg">
+    <div className="container mx-auto max-w-7xl">
+      <div className="mb-12">
+        <div className="flex items-center gap-2 mb-4">
+          <img
+            src="https://cdn.prod.website-files.com/6706a99d653627fc4a24f79b/6706c5a11280e578e46fadd6_Logo%20(10).svg"
+          />
+          <div className="text-xl font-semibold">Clikup</div>
+        </div>
+        <div className="text-gray-600 max-w-xs">
+          Manage it all with a fully customizable, no code platform
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div>
+          <div className="text-gray-500 font-medium mb-4">Useful Link</div>
+          <div className="space-y-3">
+            <div className="text-gray-700 hover:text-gray-900 cursor-pointer">Features</div>
+            <div className="text-gray-700 hover:text-gray-900 cursor-pointer">Pricing</div>
+            <div className="text-gray-700 hover:text-gray-900 cursor-pointer">About Us</div>
+            <div className="text-gray-700 hover:text-gray-900 cursor-pointer">Blog</div>
+          </div>
+        </div>
+
+        <div>
+          <div className="text-gray-500 font-medium mb-4">Product</div>
+          <div className="space-y-3">
+            <div className="text-gray-700 hover:text-gray-900 cursor-pointer">Product Teams</div>
+            <div className="text-gray-700 hover:text-gray-900 cursor-pointer">Finance Teams</div>
+            <div className="text-gray-700 hover:text-gray-900 cursor-pointer">Data Teams</div>
+          </div>
+        </div>
+
+        <div>
+          <div className="text-gray-500 font-medium mb-4">Company</div>
+          <div className="space-y-3">
+            <div className="text-gray-700 hover:text-gray-900 cursor-pointer">Sign up</div>
+            <div className="text-gray-700 hover:text-gray-900 cursor-pointer">Login</div>
+            <div className="text-gray-700 hover:text-gray-900 cursor-pointer">More Templates</div>
+          </div>
+        </div>
+
+        {/* soc tīklu ikonas  */}
+        <div className="lg:col-span-2">
+          <div className="text-gray-500 font-medium mb-4">Social</div>
+          <div className="flex gap-4">
+            <div className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center cursor-pointer hover:bg-gray-200">
+            <img
+            src="https://cdn.prod.website-files.com/6706a99d653627fc4a24f79b/6709660d53f171b0c1fe196e_mage_x.svg"
+            />
+            </div>
+            <div className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center cursor-pointer hover:bg-gray-200">
+            <img
+            src="https://cdn.prod.website-files.com/6706a99d653627fc4a24f79b/6709660dd84fe251d18953c3_ic_baseline-facebook.svg"
+            />
+            </div>
+            <div className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center cursor-pointer hover:bg-gray-200">
+            <img
+            src="https://cdn.prod.website-files.com/6706a99d653627fc4a24f79b/6709660d385fd8991b073faa_ri_instagram-fill.svg"
+            />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom Footer */}
+      <div className="flex flex-col md:flex-row justify-between items-center mt-12 pt-8 border-t">
+        <div className="text-gray-600">Made in Webflow</div>
+        <div className="flex gap-6">
+          <div className="text-gray-600 hover:text-gray-900 cursor-pointer">Temlis</div>
+          <div className="text-gray-600 hover:text-gray-900 cursor-pointer">Licensing</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
 
 
     </div>
