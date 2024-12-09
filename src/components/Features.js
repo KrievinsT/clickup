@@ -16,7 +16,7 @@ function Features() {
           </div>
           <nav className="hidden md:flex items-center space-x-6">
             <Link to="/features" className="text-gray-600 hover:text-orange-500">Features</Link>
-            <a href="#" className="text-gray-600 hover:text-orange-500">Pricing</a>
+            <Link to="Pricing" className="text-gray-600 hover:text-orange-500">Pricing</Link>
             <a href="#" className="text-gray-600 hover:text-orange-500">About Us</a>
             <a href="#" className="text-gray-600 hover:text-orange-500">Blog</a>
             <a href="#" className="text-gray-600 hover:text-orange-500">Cart (0)</a>

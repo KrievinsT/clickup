@@ -34,9 +34,9 @@ export default function LandingPage() {
           </div>
           <nav className="hidden md:flex items-center space-x-6">
           <Link to="Features" className="text-gray-600 hover:text-orange-500">Features</Link>
-            <a href="#" className="text-gray-600 hover:text-orange-500">Pricing</a>
-            <a href="#" className="text-gray-600 hover:text-orange-500">About Us</a>
-            <a href="#" className="text-gray-600 hover:text-orange-500">Blog</a>
+          <Link to="Pricing" className="text-gray-600 hover:text-orange-500">Pricing</Link>
+          <Link to="AboutUs" className="text-gray-600 hover:text-orange-500">About Us</Link>
+          <Link to="Blog" className="text-gray-600 hover:text-orange-500">Blog</Link>
             <a href="#" className="text-gray-600 hover:text-orange-500">Cart (0)</a>
           </nav>
           <button className="hidden md:inline-flex px-4 py-2 border border-gray-300 bg-white rounded-full hover:bg-orange-500">
